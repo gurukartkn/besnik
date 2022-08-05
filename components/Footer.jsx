@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   AiOutlineFacebook,
@@ -12,23 +13,25 @@ const Footer = () => {
   return (
     <div className="p-10 lg:p-20 text-center flex flex-wrap justify-center lg:justify-around items-center gap-10">
       <div className="w-36 lg:w-auto flex flex-wrap justify-center items-center gap-5 font-medium font-mono">
-        <p>ABOUT</p>
-        <p>HOW IT WORKS</p>
-        <p>CONTACT</p>
+        <p className="cursor-pointer">ABOUT</p>
+        <p className="cursor-pointer">HOW IT WORKS</p>
+        <p className="cursor-pointer">CONTACT</p>
       </div>
-      <div className="w-36">
-        <Image src={Branding} alt="branding" />
+      <div className="w-36 cursor-pointer">
+        <Link href="#">
+          <Image src={Branding} alt="branding" />
+        </Link>
       </div>
       <div className="w-36 flex justify-center items-center gap-3 font-medium font-mono">
-        <p>Signup</p>
-        <p>Login</p>
-        <p>
+        <p className="cursor-pointer">Signup</p>
+        <p className="cursor-pointer">Login</p>
+        <p className="cursor-pointer">
           <AiOutlineFacebook />
         </p>
-        <p>
+        <p className="cursor-pointer">
           <AiOutlineInstagram />
         </p>
-        <p>
+        <p className="cursor-pointer">
           <AiOutlineYoutube />
         </p>
       </div>
