@@ -5,13 +5,13 @@ import Bag from "../public/assets/bag.png";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div>
+    <nav className="flex p-5 items-center justify-between md:p-10 lg:p-20">
+      <div className="hidden lg:flex gap-5 xl:gap-8 font-medium font-mono w-1/3s">
         <p>ABOUT</p>
         <p>HOW IT WORKS</p>
         <p>CONTACT</p>
       </div>
-      <div>
+      <div className="lg:w-1/3">
         <Image src={Branding} alt="Besnik" />
       </div>
       <div>

@@ -10,21 +10,27 @@ import Branding from "../public/assets/Besnik.png";
 
 const Footer = () => {
   return (
-    <div>
-      <div>
+    <div className="p-10 lg:p-20 text-center flex flex-wrap justify-center lg:justify-around items-center gap-10">
+      <div className="w-36 lg:w-auto flex flex-wrap justify-center items-center gap-5 font-medium font-mono">
         <p>ABOUT</p>
         <p>HOW IT WORKS</p>
         <p>CONTACT</p>
       </div>
-      <div>
+      <div className="w-36">
         <Image src={Branding} alt="branding" />
       </div>
-      <div>
+      <div className="w-36 flex justify-center items-center gap-3 font-medium font-mono">
         <p>Signup</p>
         <p>Login</p>
-        <AiOutlineFacebook />
-        <AiOutlineInstagram />
-        <AiOutlineYoutube />
+        <p>
+          <AiOutlineFacebook />
+        </p>
+        <p>
+          <AiOutlineInstagram />
+        </p>
+        <p>
+          <AiOutlineYoutube />
+        </p>
       </div>
     </div>
   );
